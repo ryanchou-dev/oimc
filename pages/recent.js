@@ -74,6 +74,7 @@ export default function Home() {
             <a
               className="bg-slate-400 p-2 rounded-lg bg-opacity-30 mb-2"
               target={"_blank"}
+              rel="noreferrer"
               href="https://docs.google.com/spreadsheets/d/1C3-b4t4VsIMcAms9uJuiPdYaKxAYWIOWdGSBbkB2n3Y/edit?usp=sharing"
             >
               High School Leaderboard
@@ -83,6 +84,7 @@ export default function Home() {
             <a
               className="bg-slate-400 p-2 rounded-lg bg-opacity-30 mb-2"
               target={"_blank"}
+              rel="noreferrer"
               href="https://docs.google.com/spreadsheets/d/1I62CZuPsrERGIdvlJpEgB7whVkZ5joIALfdLOdXyErM/edit?usp=sharing"
             >
               Middle School Leaderboard
