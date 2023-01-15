@@ -100,7 +100,7 @@ export default function Home() {
             <span className="font-extrabold">C</span>ompetition
           </h1>
           <p className="text-xl md:text-2xl">
-            July 16th 10 AM EST to July 17th 11:59 PM EST
+            July 2023
           </p>
           <p className="text-lg md:text-xl pt-12 md:px-48">
             We are a group of students who want to share our passion for
@@ -117,7 +117,7 @@ export default function Home() {
             </h2>
             <p className="text-xl md:text-2xl text-gray-600">
               The Online International Math Competition, or OIMC, will take
-              place for the first time from July 16th, 2022 to July 17th, 2022.
+              place for the second time in July 2023.
               This competition is run by high school students and is open for
               7th to 10th graders from around the world to compete for prizes.
               More information about our team and the competition is listed on
