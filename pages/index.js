@@ -20,7 +20,7 @@ export default function Home() {
   }, [top]);
 
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-slate-100 min-h-screen w-screen">
       <div
         className={`border-b-4 border-opacity-40 shadow-lg border-blue-900 fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
           !top && "bg-white backdrop-blur-sm"
@@ -36,8 +36,6 @@ export default function Home() {
                   </span>
                 </Link>
               </div>
-
-              {/* fillRule="nonzero" */}
               {/* /> */}
               {/* </svg> */}
             </div>
@@ -61,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
+        className="md:block hidden absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
         aria-hidden="true"
       >
         <svg
@@ -90,10 +88,10 @@ export default function Home() {
         </svg>
       </div>
 
-      <div className="pt-48 max-w-6xl mx-auto px-12 sm:px-6">
+      <div className="pt-48 w-screen max-w-6xl mx-auto px-12 sm:px-6">
         <div className="min-h-screen text-center pb-12 md:pb-16">
           <h1
-            className="text-6xl md:text-7xl font-bold leading-tighter tracking-tighter mb-4"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tighter tracking-tighter mb-4"
             data-aos="zoom-y-out"
           >
             <span className="font-extrabold">O</span>nline{" "}
