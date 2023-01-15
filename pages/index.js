@@ -5,60 +5,14 @@ import styles from "../styles/Home.module.css";
 import React, { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
+import Nav from "../comp/nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [top, setTop] = useState(true);
-
-  // sticky header
-  useEffect(() => {
-    const scrollHandler = () => {
-      window.pageYOffset > 10 ? setTop(false) : setTop(true);
-    };
-    window.addEventListener("scroll", scrollHandler);
-    return () => window.removeEventListener("scroll", scrollHandler);
-  }, [top]);
-
   return (
     <div className="bg-slate-100 min-h-screen w-screen">
-      <div
-        className={`border-b-4 border-opacity-40 shadow-lg border-blue-900 fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-          !top && "bg-white backdrop-blur-sm"
-        }`}
-      >
-        <div className="max-w-6xl mx-auto px-5 sm:px-6">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            <div className="flex-shrink-0 mr-4">
-              <div className="inline-block">
-                <Link href="/">
-                  <span className="font-extrabold text-3xl bg-clip-text text-transparent p-4 bg-gradient-to-r from-blue-500 to-green-400">
-                    OIMC
-                  </span>
-                </Link>
-              </div>
-              {/* /> */}
-              {/* </svg> */}
-            </div>
-
-            {/* Site navigation */}
-            <nav className="flex flex-grow">
-              <ul className="flex space-x-6  flex-grow justify-end flex-wrap items-center">
-                <Link href="/recent">
-                  <li className="p-2 bg-blue-200 rounded-lg text-lg bg-opacity-50">
-                    2022
-                  </li>{" "}
-                </Link>
-                <Link href="/about">
-                  <li className="p-2 bg-blue-200 rounded-lg text-lg bg-opacity-50">
-                    About Us
-                  </li>{" "}
-                </Link>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+      <Nav />
       <div
         className="md:block hidden absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
         aria-hidden="true"
@@ -100,9 +54,7 @@ export default function Home() {
             <span className="font-extrabold">M</span>ath{" "}
             <span className="font-extrabold">C</span>ompetition
           </h1>
-          <p className="text-xl md:text-2xl">
-            July 2023
-          </p>
+          <p className="text-xl md:text-2xl">July 2023</p>
           <p className="text-lg md:text-xl pt-12 md:px-48">
             We are a group of students who want to share our passion for
             mathematics with others! Register today to compete in this online
@@ -118,11 +70,10 @@ export default function Home() {
             </h2>
             <p className="text-xl md:text-2xl text-gray-600">
               The Online International Math Competition, or OIMC, will take
-              place for the second time in July 2023.
-              This competition is run by high school students and is open for
-              7th to 10th graders from around the world to compete for prizes.
-              More information about our team and the competition is listed on
-              other pages.
+              place for the second time in July 2023. This competition is run by
+              high school students and is open for 7th to 10th graders from
+              around the world to compete for prizes. More information about our
+              team and the competition is listed on other pages.
             </p>
           </div>
         </div>
