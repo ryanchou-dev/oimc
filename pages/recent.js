@@ -69,7 +69,7 @@ export default function Home() {
           >
             OIMC 2022
           </h1>
-          <p className="text-xl md:text-2xl">recently ended.</p>
+          <p className="text-xl md:text-2xl">Happened on July 16th to July 17th 2022</p>
           <p className="text-lg md:text-xl pt-12 md:px-48">
             <a
               className="bg-slate-400 p-2 rounded-lg bg-opacity-30 mb-2"
