@@ -67,7 +67,7 @@ export default function Home() {
             className="text-6xl md:text-7xl font-bold leading-tighter tracking-tighter mb-4"
             data-aos="zoom-y-out"
           >
-            About Us.
+            About Us
           </h1>
           <p className="text-xl md:text-2xl">
             The OIMC committee is a group of students who have a passion for
